@@ -1,5 +1,3 @@
-
-
 :root {
     --main-color-: #082F7E;
     --white-: #fff;
@@ -8,8 +6,9 @@
     --das-card-: #EBEDEE;
     --das-card-2-: #FDFBFB;
     --verified-: #40ff00;
-    --num-:#001B55;
-    --num-2-:#045CBA;
+    --num-: #001B55;
+    --num-2-: #045CBA;
+    --grey-: #888888;
 }
 
 .navbar {
@@ -42,7 +41,7 @@ section {
     justify-content: space-around;
 }
 
-.records{
+.records {
     color: var(--main-color-);
     font-weight: bold;
     margin: 0 4px;
@@ -72,24 +71,88 @@ section {
 .user_year {
     display: flex;
 }
-main{
+
+main {
     overflow-x: hidden;
 }
 
-.card{
+.card {
     width: 400px;
     max-width: 100%;
 }
 
-.victories{
+.victories>p {
     color: var(--main-color-);
     font-weight: bold;
 }
-.vic-num{
+
+.victories>h5 {
+    color: var(--grey-);
+}
+
+.vic-num {
     color: var(--num-);
     font-size: 2.5rem;
     font-weight: bold;
 }
-.rate{
+
+.rate {
     color: var(--num-2-);
+}
+
+.start-container .ready{
+    color:var(--main-color-);
+}
+/* From Uiverse.io*/
+.btn {
+    width: 140px;
+    height: 50px;
+    background-color: #FFC520;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+}
+
+.btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight: bolder;
+
+}
+
+.btn:hover .btn-text-one {
+    top: -100%;
+
+}
+
+.btn:hover .btn-text-two {
+    top: 50%;
+}
+footer{
+    width: 100%;
+    height: max-content;
+    
 }
