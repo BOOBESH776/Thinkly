@@ -1,0 +1,36 @@
+
+
+:root {
+    --main-color: #E11D48;
+    --white-: #fff;
+    --black-: #000;
+    --hover-: #e3496a;
+}
+
+.sign-card {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    background-color: var(--black-);
+    color: var(--white-);
+    border-radius: 14px;
+}
+
+.sign-card input {
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.btn-main {
+    background-color: var(--main-color);
+    color: var(--white-);
+
+}
+
+.btn-main:hover {
+    background-color: var(--hover-);
+}
