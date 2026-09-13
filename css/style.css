@@ -1,3 +1,4 @@
+
 :root {
     --main-color-: #082F7E;
     --white-: #fff;
@@ -70,10 +71,6 @@ section {
 
 .user_year {
     display: flex;
-}
-
-main {
-    overflow-x: hidden;
 }
 
 .card {
@@ -151,8 +148,11 @@ main {
 .btn:hover .btn-text-two {
     top: 50%;
 }
-footer{
-    width: 100%;
-    height: max-content;
-    
+
+.footer-container{
+    background-color: var(--das-card-);
+}
+.footer-container .footer-name{
+    color: var(--num-);
+    font-weight: bold;
 }
