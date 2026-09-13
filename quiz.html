@@ -27,11 +27,11 @@
         </div>
     </nav>
 
-    <section>
+    <article>
         <div class="hero-container d-flex justify-content-center">
             <div class="card shadow w-75">
                 <div class="card-body">
-                    <h4 class="card-title questions">20 Questions</h4>
+                    <h4 class="card-title no-questions">20 Questions</h4>
                     <p class="card-text">Estimated completion time : 16m 00s</p>
                     <div class="instruction">
                         <h3>Instruction</h3>
@@ -66,9 +66,67 @@
                     </div>
                 </div>
             </div>
-
         </div>
-    </section>
+    </article>
+    <br><br>
+    <main>
+        <span class="question-below text-center">
+            <h2>Questions Below</h2>
+        </span>
+
+        <div class="question-container d-flex justify-content-center">
+            <div class="card w-75">
+                <h5 class="card-header">Q : 1</h5>
+                <div class="card-body">
+                    <h5 class="card-title question">What is a correct syntax to output "Hello World" in Python?</h5>
+
+                    <div class="options-container">
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; p("Hello World")
+                            </div>
+                        </div>
+
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; echo("Hello World")
+                            </div>
+                        </div>
+
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; print("Hello World")
+                            </div>
+                        </div>
+
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; echo"Hello World"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+        <center>
+            <div class="submit-btn">
+                <button type="button" class="btn">Submit</button>
+            </div>
+        </center>
+    </main>
 </body>
 
 </html>
