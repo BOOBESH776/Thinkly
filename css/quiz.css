@@ -1,0 +1,26 @@
+
+:root {
+    --main-color-: #082F7E;
+    --white-: #fff;
+    --black-: #000;
+    --hover-: #1645a4;
+    --das-card-: #EBEDEE;
+    --das-card-2-: #FDFBFB;
+    --verified-: #40ff00;
+    --num-: #001B55;
+    --num-2-: #045CBA;
+    --grey-: #888888;
+}
+
+.navbar-brand >h4{
+    color: var(--main-color-);
+    font-weight: bold;
+}
+
+.hero-container .card .questions{
+    color: var(--main-color-);
+    font-weight: bolder;
+}
+.hero-container .card .card-body > p{
+    color: var(--grey-);
+}
