@@ -31,3 +31,8 @@
     color: var(--white-);
     font-weight: bold;
 }
+
+.submit-btn button:hover{
+    background-color: var(--hover-);
+    color: var(--white-);
+}
