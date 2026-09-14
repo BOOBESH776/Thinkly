@@ -17,7 +17,167 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/assets/img/thinkly_logo.png" alt="Logo" width="50" height="50">
+                <h4>Thinkly</h4>
+            </a>
+        </div>
+    </nav>
+    <br><br>
+    <article>
+        <center>
+            <div class="card w-75">
+                <div class="card-body d-flex justify-content-between">
+                    <div class="">
+                        <h2 class="card-title result text-start"><span>18</span>/ 20 Correct</h2>
+                        <p class="card-text text-start ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                            Nihil
+                            cupiditate ad excepturi minima quasi magnam inventore obcaecati voluptatem est eligendi!</p>
+                    </div><br>
+                    <div>
+                        <a href="/pages/index.html">
+                            <button class="btn btn-warning">Continue</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="total-time rounded m-3">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-timer">
+                            <line x1="10" x2="14" y1="2" y2="2" />
+                            <line x1="12" x2="15" y1="14" y2="11" />
+                            <circle cx="12" cy="14" r="8" />
+                        </svg>
+                    </div>
+                    <span class="finish-time mt-3">
+                        <p class="m-0 time-head">TOTAL TIME</p>
+                        <p class="finish-one">&nbsp;03m 42s</p>
+                    </span>
+                </div>
+            </div>
+        </center>
 
+    </article>
+    <br><br>
+    <main>
+        <div class="validation-container container d-flex justify-content-around flex-wrap">
+            <div class="result-head">
+                <h2>Answer Review & Validation</h2>
+                <p>Review all 20 tactical interactions, verified solution.</p>
+            </div>
+
+            <div class="filter-head">
+                <ul>
+                    <li>
+                        All
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-x">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>&nbsp;Incorrect
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-check">
+                            <path d="M20 6 9 17l-5-5" />
+                        </svg>&nbsp;Correct
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <div class="Review-container d-flex justify-content-center">
+            <div class="card w-75">
+                <h5 class="card-header">Q : 1</h5>
+                <div class="card-body">
+                    <h5 class="card-title question">What is a correct syntax to output "Hello World" in Python?</h5>
+
+                    <div class="options-container">
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; p("Hello World")
+                            </div>
+                        </div>
+
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; echo("Hello World")
+                            </div>
+                        </div>
+
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; print("Hello World")
+                            </div>
+                        </div>
+
+                        <div class="question-option d-flex align-items-end">
+                            <div>
+                                <input type="radio" alt="btn" name="answer">
+                            </div>
+                            <div>
+                                &nbsp; echo"Hello World"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="return-dasboard flex-wrap w-75 p-2">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-book-open-check">
+                    <path d="M12 5v16" />
+                    <path d="m16 12 2 2 4-4" />
+                    <path
+                        d="M22 6V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2h4.001A2 2 0 0022 17v-1.344" />
+                </svg>&nbsp;All 20 records validated and persisted to database ledger.
+            </div>
+            
+            <div>
+                <a href="/pages/index.html">
+                    <button type="button" class="btn continue-btn">Continue to Dashboard -></button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <br><br>
+    <footer>
+        <div class="footer-container d-flex flex-wrap justify-content-between">
+            <div class="d-flex align-items-center">
+                <div>
+                    <img src="/assets/img/thinkly_logo.png" width="50px" height="50px" class="rounded-5" alt="logo">
+                </div>
+                <div>
+                    <p>&nbsp; &nbsp;Next-Gen Competitive Trivia System</p>
+                </div>
+            </div>
+            <div>
+                <p>&copy; 2026 Thinkly.All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

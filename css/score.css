@@ -1,0 +1,91 @@
+:root {
+    --main-color-: #082F7E;
+    --white-: #fff;
+    --black-: #000;
+    --hover-: #1645a4;
+    --das-card-: #EBEDEE;
+    --das-card-2-: #FDFBFB;
+    --verified-: #40ff00;
+    --num-: #001B55;
+    --num-2-: #045CBA;
+    --grey-: #888888;
+    --yellow-: #FFC520;
+}
+
+.card .card-body .result {
+    color: var(--main-color-);
+    font-weight: bold;
+}
+
+.total-time {
+    width: 150px;
+    height: 60px;
+    background-color: var(--das-card-);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-head {
+    color: var(--grey-);
+}
+
+.finish-one {
+    color: var(--main-color-);
+    font-weight: bold;
+}
+
+.validation-container .result-head>h2 {
+    color: var(--main-color-);
+    font-weight: bold;
+}
+
+.validation-container .result-head>p {
+    color: var(--grey-);
+}
+
+.filter-head {
+    width: 500px;
+    max-width: max-content;
+}
+
+.filter-head>ul {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-head>ul>li {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.filter-head>ul>li:hover {
+    color: var(--grey-);
+}
+
+.return-dasboard {
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 120px;
+    background-color: var(--das-card-);
+    border-radius: 10px;
+}
+
+.return-dasboard .continue-btn {
+    background-color: var(--main-color-);
+    color: var(--white-);
+}
+
+.return-dasboard .continue-btn:hover {
+    background-color: var(--hover-);
+    color: var(--white-);
+}
+
+.footer-container {
+    background-color: var(--das-card-);
+    padding: 10px;
+}

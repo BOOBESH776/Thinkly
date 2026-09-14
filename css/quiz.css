@@ -36,3 +36,9 @@
     background-color: var(--hover-);
     color: var(--white-);
 }
+
+
+.footer-container{
+    background-color: var(--das-card-);
+    padding: 10px;
+}
