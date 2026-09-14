@@ -62,6 +62,7 @@
 
 .filter-head>ul>li:hover {
     color: var(--grey-);
+    text-decoration:overline;
 }
 
 .return-dasboard {
