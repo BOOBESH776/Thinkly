@@ -1,5 +1,4 @@
 
-
 :root {
     --main-color-: #082F7E;
     --white-: #fff;
@@ -13,6 +12,7 @@
     --grey-: #888888;
     --yellow-: #FFC520;
 }
+
 .sign-card {
     width: 90%;
     max-width: 400px;

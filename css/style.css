@@ -1,3 +1,7 @@
+body,
+html {
+    overflow-x: hidden;
+}
 
 :root {
     --main-color-: #082F7E;
@@ -73,11 +77,11 @@ section {
 .user_year {
     display: flex;
 }
-
 .card {
-    width: 400px;
-    max-width: 100%;
-    margin: 0 5px;
+    width: 370px;
+    max-width: 85%;
+    display: flex;
+    justify-self: center;
 }
 
 .victories>p {
@@ -99,9 +103,10 @@ section {
     color: var(--num-2-);
 }
 
-.start-container .ready{
-    color:var(--main-color-);
+.start-container .ready {
+    color: var(--main-color-);
 }
+
 /* From Uiverse.io*/
 .btn {
     width: 140px;
@@ -150,7 +155,8 @@ section {
     top: 50%;
 }
 
-.footer-container{
+.footer-container {
     background-color: var(--das-card-);
     padding: 10px;
+    width: 100%;
 }
