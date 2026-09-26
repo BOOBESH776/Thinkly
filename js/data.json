@@ -1,0 +1,552 @@
+[
+{
+"id": 1,
+"question": "What is Python?",
+"options": {
+"option1": "A programming language",
+"option2": "A database",
+"option3": "An operating system",
+"option4": "A web browser"
+},
+"answer": "option1"
+},
+{
+"id": 2,
+"question": "Which symbol starts a comment in Python?",
+"options": {
+"option1": "//",
+"option2": "#",
+"option3": "/*",
+"option4": "--"
+},
+"answer": "option2"
+},
+{
+"id": 3,
+"question": "Which keyword is used to define a function?",
+"options": {
+"option1": "function",
+"option2": "func",
+"option3": "def",
+"option4": "define"
+},
+"answer": "option3"
+},
+{
+"id": 4,
+"question": "Which function displays text on the screen?",
+"options": {
+"option1": "show()",
+"option2": "display()",
+"option3": "write()",
+"option4": "print()"
+},
+"answer": "option4"
+},
+{
+"id": 5,
+"question": "Which of these is a valid Python variable name?",
+"options": {
+"option1": "2name",
+"option2": "my_name",
+"option3": "my-name",
+"option4": "class"
+},
+"answer": "option2"
+},
+{
+"id": 6,
+"question": "What data type is the value 42?",
+"options": {
+"option1": "str",
+"option2": "float",
+"option3": "int",
+"option4": "bool"
+},
+"answer": "option3"
+},
+{
+"id": 7,
+"question": "What data type is "Hello"?",
+"options": {
+"option1": "str",
+"option2": "int",
+"option3": "list",
+"option4": "bool"
+},
+"answer": "option1"
+},
+{
+"id": 8,
+"question": "Which value represents a Boolean true value?",
+"options": {
+"option1": "true",
+"option2": "TRUE",
+"option3": "True",
+"option4": "yes"
+},
+"answer": "option3"
+},
+{
+"id": 9,
+"question": "What is the result of 5 + 3?",
+"options": {
+"option1": "2",
+"option2": "8",
+"option3": "15",
+"option4": "53"
+},
+"answer": "option2"
+},
+{
+"id": 10,
+"question": "What is the result of 10 / 2 in Python 3?",
+"options": {
+"option1": "5.0",
+"option2": "5",
+"option3": "20",
+"option4": "0"
+},
+"answer": "option1"
+},
+{
+"id": 11,
+"question": "Which operator is used for exponentiation?",
+"options": {
+"option1": "^",
+"option2": "//",
+"option3": "",
+"option4": "%%"
+},
+"answer": "option3"
+},
+{
+"id": 12,
+"question": "Which operator gives the remainder of a division?",
+"options": {
+"option1": "/",
+"option2": "//",
+"option3": "",
+"option4": "%"
+},
+"answer": "option4"
+},
+{
+"id": 13,
+"question": "Which operator checks whether two values are equal?",
+"options": {
+"option1": "=",
+"option2": "==",
+"option3": "!=",
+"option4": "=>"
+},
+"answer": "option2"
+},
+{
+"id": 14,
+"question": "What does the != operator mean?",
+"options": {
+"option1": "Not equal to",
+"option2": "Equal to",
+"option3": "Greater than",
+"option4": "Less than"
+},
+"answer": "option1"
+},
+{
+"id": 15,
+"question": "Which logical operator means both conditions must be true?",
+"options": {
+"option1": "or",
+"option2": "not",
+"option3": "and",
+"option4": "both"
+},
+"answer": "option3"
+},
+{
+"id": 16,
+"question": "Which logical operator returns true when at least one condition is true?",
+"options": {
+"option1": "and",
+"option2": "or",
+"option3": "not",
+"option4": "either"
+},
+"answer": "option2"
+},
+{
+"id": 17,
+"question": "Which operator is used to assign a value to a variable?",
+"options": {
+"option1": "==",
+"option2": ":=",
+"option3": "=",
+"option4": "=>"
+},
+"answer": "option3"
+},
+{
+"id": 18,
+"question": "What does x += 3 do?",
+"options": {
+"option1": "Adds 3 to x and assigns the result to x",
+"option2": "Compares x with 3",
+"option3": "Multiplies x by 3",
+"option4": "Creates a new variable named 3"
+},
+"answer": "option1"
+},
+{
+"id": 19,
+"question": "Which function is used to get input from a user?",
+"options": {
+"option1": "get()",
+"option2": "read()",
+"option3": "input()",
+"option4": "scan()"
+},
+"answer": "option3"
+},
+{
+"id": 20,
+"question": "What type of value does input() normally return?",
+"options": {
+"option1": "int",
+"option2": "str",
+"option3": "float",
+"option4": "bool"
+},
+"answer": "option2"
+},
+{
+"id": 21,
+"question": "Which function converts a string to an integer?",
+"options": {
+"option1": "str()",
+"option2": "float()",
+"option3": "int()",
+"option4": "number()"
+},
+"answer": "option3"
+},
+{
+"id": 22,
+"question": "What does str(25) return?",
+"options": {
+"option1": "25 as a string",
+"option2": "25.0 as a float",
+"option3": "True",
+"option4": "An error"
+},
+"answer": "option1"
+},
+{
+"id": 23,
+"question": "Which keyword is used to start a conditional statement?",
+"options": {
+"option1": "when",
+"option2": "if",
+"option3": "check",
+"option4": "condition"
+},
+"answer": "option2"
+},
+{
+"id": 24,
+"question": "Which keyword runs when an if condition is false?",
+"options": {
+"option1": "otherwise",
+"option2": "elif",
+"option3": "else",
+"option4": "except"
+},
+"answer": "option3"
+},
+{
+"id": 25,
+"question": "Which keyword checks another condition after if?",
+"options": {
+"option1": "elif",
+"option2": "elseif",
+"option3": "else_if",
+"option4": "then"
+},
+"answer": "option1"
+},
+{
+"id": 26,
+"question": "What is important about indentation in Python?",
+"options": {
+"option1": "It is only used for comments",
+"option2": "It defines blocks of code",
+"option3": "It changes variable names",
+"option4": "It is never required"
+},
+"answer": "option2"
+},
+{
+"id": 27,
+"question": "Which loop is commonly used to iterate over a sequence?",
+"options": {
+"option1": "repeat",
+"option2": "loop",
+"option3": "for",
+"option4": "iterate"
+},
+"answer": "option3"
+},
+{
+"id": 28,
+"question": "What values are produced by range(3)?",
+"options": {
+"option1": "1, 2, 3",
+"option2": "0, 1, 2",
+"option3": "0, 1, 2, 3",
+"option4": "3, 2, 1"
+},
+"answer": "option2"
+},
+{
+"id": 29,
+"question": "Which loop continues while a condition is true?",
+"options": {
+"option1": "for",
+"option2": "repeat",
+"option3": "while",
+"option4": "during"
+},
+"answer": "option3"
+},
+{
+"id": 30,
+"question": "Which statement immediately exits a loop?",
+"options": {
+"option1": "stop",
+"option2": "exit",
+"option3": "break",
+"option4": "end"
+},
+"answer": "option3"
+},
+{
+"id": 31,
+"question": "Which statement skips the rest of the current loop iteration?",
+"options": {
+"option1": "skip",
+"option2": "continue",
+"option3": "next",
+"option4": "pass_loop"
+},
+"answer": "option2"
+},
+{
+"id": 32,
+"question": "Which brackets are used to create a list?",
+"options": {
+"option1": "{}",
+"option2": "()",
+"option3": "[]",
+"option4": "<>"
+},
+"answer": "option3"
+},
+{
+"id": 33,
+"question": "What is the index of the first item in a Python list?",
+"options": {
+"option1": "0",
+"option2": "1",
+"option3": "-1",
+"option4": "2"
+},
+"answer": "option1"
+},
+{
+"id": 34,
+"question": "If nums = [10, 20, 30], what is nums[1]?",
+"options": {
+"option1": "10",
+"option2": "20",
+"option3": "30",
+"option4": "1"
+},
+"answer": "option2"
+},
+{
+"id": 35,
+"question": "What does nums[-1] return for a non-empty list?",
+"options": {
+"option1": "The first item",
+"option2": "The second item",
+"option3": "The last item",
+"option4": "The list length"
+},
+"answer": "option3"
+},
+{
+"id": 36,
+"question": "What does [1, 2, 3, 4][1:3] return?",
+"options": {
+"option1": "[1, 2]",
+"option2": "[2, 3]",
+"option3": "[2, 3, 4]",
+"option4": "[1, 2, 3]"
+},
+"answer": "option2"
+},
+{
+"id": 37,
+"question": "Which list method adds an item to the end of a list?",
+"options": {
+"option1": "add()",
+"option2": "insert_end()",
+"option3": "append()",
+"option4": "push()"
+},
+"answer": "option3"
+},
+{
+"id": 38,
+"question": "Which list method removes and returns the last item by default?",
+"options": {
+"option1": "delete()",
+"option2": "remove()",
+"option3": "discard()",
+"option4": "pop()"
+},
+"answer": "option4"
+},
+{
+"id": 39,
+"question": "Which data type stores an ordered, immutable collection?",
+"options": {
+"option1": "list",
+"option2": "tuple",
+"option3": "set",
+"option4": "dictionary"
+},
+"answer": "option2"
+},
+{
+"id": 40,
+"question": "Which brackets are commonly used to create a tuple?",
+"options": {
+"option1": "[]",
+"option2": "{}",
+"option3": "()",
+"option4": "<>"
+},
+"answer": "option3"
+},
+{
+"id": 41,
+"question": "Which data type stores unique values?",
+"options": {
+"option1": "set",
+"option2": "list",
+"option3": "tuple",
+"option4": "string"
+},
+"answer": "option1"
+},
+{
+"id": 42,
+"question": "Which set operation returns elements found in both sets?",
+"options": {
+"option1": "union",
+"option2": "intersection",
+"option3": "difference",
+"option4": "addition"
+},
+"answer": "option2"
+},
+{
+"id": 43,
+"question": "Which data type stores key-value pairs?",
+"options": {
+"option1": "list",
+"option2": "tuple",
+"option3": "dictionary",
+"option4": "set"
+},
+"answer": "option3"
+},
+{
+"id": 44,
+"question": "Which method returns all keys in a dictionary?",
+"options": {
+"option1": "keys()",
+"option2": "all_keys()",
+"option3": "get_keys()",
+"option4": "key_list()"
+},
+"answer": "option1"
+},
+{
+"id": 45,
+"question": "Which keyword is used to define a class?",
+"options": {
+"option1": "object",
+"option2": "class",
+"option3": "struct",
+"option4": "type"
+},
+"answer": "option2"
+},
+{
+"id": 46,
+"question": "What is an object in Python?",
+"options": {
+"option1": "An instance of a class",
+"option2": "Only a function",
+"option3": "Only a variable",
+"option4": "A Python keyword"
+},
+"answer": "option1"
+},
+{
+"id": 47,
+"question": "Which special method is commonly used as a class constructor?",
+"options": {
+"option1": "start",
+"option2": "create",
+"option3": "newclass",
+"option4": "init"
+},
+"answer": "option4"
+},
+{
+"id": 48,
+"question": "Which keyword is used to catch an exception?",
+"options": {
+"option1": "catch",
+"option2": "except",
+"option3": "error",
+"option4": "handle"
+},
+"answer": "option2"
+},
+{
+"id": 49,
+"question": "Which statement is used to return a value from a function?",
+"options": {
+"option1": "send",
+"option2": "give",
+"option3": "return",
+"option4": "output"
+},
+"answer": "option3"
+},
+{
+"id": 50,
+"question": "Which keyword is used to import a module?",
+"options": {
+"option1": "include",
+"option2": "using",
+"option3": "require",
+"option4": "import"
+},
+"answer": "option4"
+}
+]
