@@ -67,7 +67,7 @@
 },
 {
 "id": 7,
-"question": "What data type is "Hello"?",
+"question": "What data type is Hello",
 "options": {
 "option1": "str",
 "option2": "int",
