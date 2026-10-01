@@ -97,6 +97,7 @@ function starttimer(t) {
             alert("time up")
             validation();
         }
+        
         remaining = remaining - 1;
     }, 1000);
 }
