@@ -91,12 +91,12 @@ function starttimer(t) {
             seconds = seconds;
         }
         timer.textContent = `${minutes}:${seconds}`
-    
-        if (remaining<=0){
+
+        if (remaining <= 0) {
             clearInterval(loop_intervel)
             alert("time up")
             validation();
         }
         remaining = remaining - 1;
-    },1000);
+    }, 1000);
 }
