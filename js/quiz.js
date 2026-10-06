@@ -87,6 +87,10 @@ function validation() {
 }
 
 //Timer For Quizz
+
+
+
+//Timer For Quizz
 function starttimer(t) {
     let remaining = t
     let timer = document.getElementById("timer");
@@ -94,39 +98,20 @@ function starttimer(t) {
         let minutes = Math.floor(remaining / 60);
         let seconds = remaining % 60;
 
+        if (minutes < 10) {
+            minutes = "0" + minutes
+        }
+        else {
+            minutes = minutes
+        }
 
-//Timer For Quizz
-// function starttimer(t) {
-//     let remaining = t
-//     let timer = document.getElementById("timer");
-//     const loop_intervel = setInterval(() => {
-//         let minutes = Math.floor(remaining / 60);
-//         let seconds = remaining % 60;
-
-//         if (minutes < 10) {
-//             minutes = "0" + minutes
-//         }
-//         else {
-//             minutes = minutes
-//         }
-
-//         if (seconds < 10) {
-//             seconds = "0" + seconds;
-//         }
-//         else {
-//             seconds = seconds;
-//         }
-//         timer.textContent = `${minutes}:${seconds}`
-
-//         if (remaining <= 0) {
-//             clearInterval(loop_intervel)
-//             alert("time up")
-//             validation();
-//         }
-
-//         remaining = remaining - 1;
-//     }, 1000);
-// }
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+        else {
+            seconds = seconds;
+        }
+        timer.textContent = `${minutes}:${seconds}`
 
         if (remaining <= 0) {
             clearInterval(loop_intervel)
