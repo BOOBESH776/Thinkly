@@ -1,12 +1,25 @@
 let quizdata = []
+let ran_question = []
 
 async function data() {
     let questions = document.getElementById('q-card');
     try {
         const res = await fetch('/assets/quizz_data/data.json');
-        quizdata = await res.json();
+        fulldata = await res.json();
         questions.innerHTML = '';
+
+        //Random Quesion
+        quizdata = fulldata.sort(function () {
+            let randomNumber = 0.5 - Math.random();
+            if (randomNumber > 0) {
+                return 1;
+            } else {
+                return -1;
+            }
+        }).slice(0,10);
+
         quizdata.forEach((item) => {
+
             questions.innerHTML +=
                 `<h5 class="card-header">Question No : ${item.id}</h5>
                 <div class="card-body">
@@ -51,14 +64,17 @@ async function data() {
                     </div>  
                 </div> `
         });
+        console.log(quizdata)
         starttimer(960)
     }
     catch (er) {
         console.error('Error:', er);
     }
 }
+
 data()
 
+// validation
 function validation() {
     let score = 0
     quizdata.forEach((item) => {
@@ -70,6 +86,7 @@ function validation() {
     alert(score)
 }
 
+//Timer For Quizz
 function starttimer(t) {
     let remaining = t
     let timer = document.getElementById("timer");
@@ -97,7 +114,7 @@ function starttimer(t) {
             alert("time up")
             validation();
         }
-        
+
         remaining = remaining - 1;
     }, 1000);
 }
