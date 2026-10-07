@@ -86,9 +86,6 @@ function validation() {
     alert(score)
 }
 
-//Timer For Quizz
-
-
 
 //Timer For Quizz
 function starttimer(t) {
