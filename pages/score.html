@@ -31,7 +31,7 @@
             <div class="card w-75">
                 <div class="card-body d-flex justify-content-between">
                     <div class="">
-                        <h2 class="card-title result text-start"><span>18</span>/ 20 Correct</h2>
+                        <h2 class="card-title result text-start"><span id="score"></span></h2>
                         <p class="card-text text-start ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
                             Nihil
                             cupiditate ad excepturi minima quasi magnam inventore obcaecati voluptatem est eligendi!</p>
@@ -54,7 +54,7 @@
                     </div>
                     <span class="finish-time mt-3">
                         <p class="m-0 time-head">TOTAL TIME</p>
-                        <p class="finish-one">&nbsp;03m 42s</p>
+                        <p class="finish-one" id="finish-one">&nbsp;</p>
                     </span>
                 </div>
             </div>
@@ -95,10 +95,10 @@
         <br>
 
         <div class="Review-container d-flex justify-content-center">
-            <div class="card w-75">
+            <div class="card w-75" >
                 <h5 class="card-header">Q : 1</h5>
-                <div class="card-body">
-                    <h5 class="card-title question">What is a correct syntax to output "Hello World" in Python?</h5>
+                <div class="card-body" id="display-questions">
+                    <!-- <h5 class="card-title question">What is a correct syntax to output "Hello World" in Python?</h5>
 
                     <div class="options-container">
                         <div class="question-option d-flex align-items-end">
@@ -136,7 +136,7 @@
                                 &nbsp; echo"Hello World"
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -178,6 +178,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- <script src="/js/quiz.js"></script> -->
+    <script src="/js/score.js"></script>
 </body>
 
 </html>
