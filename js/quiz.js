@@ -97,6 +97,7 @@ if (validation) {
                     score = score + 1;
                 }
             }
+
             else {
                 unansweredCount = unansweredCount + 1;
             }

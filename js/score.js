@@ -1,14 +1,17 @@
-// score.js
 
-// 1. Get the items from localStorage
+// get local storage items
 const finalScore = localStorage.getItem("quizScore") || 0;
 const timeTaken = localStorage.getItem("quizTime") || "00:00";
 const quizSummary = JSON.parse(localStorage.getItem("quizSummary")) || [];
 
-// 2. Display the score and time in your HTML elements
+// display score,time,questions
 const timerContainer = document.getElementById("finish-one");
 const scoreContainer = document.getElementById("score");
 const summaryContainer = document.getElementById("display-questions");
+
+// const all = document.getElementById("all");
+// const incrt = document.getElementById("incrt");
+// const crt = document.getElementById("crt");
 
 if (scoreContainer) {
     scoreContainer.textContent = `Your Final Score: ${finalScore} / 10`;

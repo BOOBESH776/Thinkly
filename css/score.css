@@ -14,9 +14,7 @@
 
 .card .card-body .result {
     color: var(--main-color-);
-    font-weight: bold;
-
-    
+    font-weight: bold;    
 }
 
 .total-time {
@@ -51,20 +49,16 @@
     max-width: max-content;
 }
 
-.filter-head>ul {
-    display: flex;
-    gap: 10px;
+.filter-head .fl-btn{
+    background-color: var(--das-card-);
+    border: none;
 }
 
-.filter-head>ul>li {
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-}
-
-.filter-head>ul>li:hover {
-    color: var(--grey-);
-    text-decoration:overline;
+.filter-head .fl-btn:hover{
+    background-color: var(--das-card-2-);
+    color: var(--black-);
+    font-weight: 500;
+    border: 1px solid #000;
 }
 
 .return-dasboard {
