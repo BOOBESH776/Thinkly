@@ -7,7 +7,7 @@ async function data() {
         const res = await fetch('/assets/quizz_data/data.json');
         let fulldata = await res.json();
 
-        // Randomize and pick 10 questions
+        //random question
         quizdata = fulldata.sort(function () {
             let randomNumber = 0.5 - Math.random();
             if (randomNumber > 0) {
@@ -69,7 +69,6 @@ async function data() {
     }
 }
 
-// FIX 1: Trigger the data loading function
 data();
 
 // validation
@@ -81,22 +80,17 @@ if (validation) {
         let score = 0;
         let unansweredCount = 0;
 
-        // FIX 2: Explicitly declare the summary array before pushing to it
         let quizSummary = [];
 
         quizdata.forEach((item) => {
             const select = document.querySelector(`input[name="q-${item.id}"]:checked`);
-
-            // FIX 3: Define userAnswer inside the loop
             let userAnswer;
-
             if (select) {
                 userAnswer = select.value
             }
             else {
                 userAnswer = null
             }
-
 
             if (select) {
                 if (select.value === item.answer) {

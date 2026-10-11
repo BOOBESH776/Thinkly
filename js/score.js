@@ -18,12 +18,11 @@ if (timerContainer) {
     timerContainer.textContent = `${timeTaken}`;
 }
 
-// 3. Loop through the questions and display them
 if (summaryContainer && quizSummary.length > 0) {
-    summaryContainer.innerHTML = ""; // Clear existing content
+    summaryContainer.innerHTML = ""; 
 
     quizSummary.forEach((item) => {
-        // Determine styling or status text based on answers
+
         let statusText = "";
         let alertClass = "";
 
@@ -38,7 +37,6 @@ if (summaryContainer && quizSummary.length > 0) {
             alertClass = "text-danger";
         }
 
-        // Append to the list container
         summaryContainer.innerHTML += `
             <div class="card mb-3">
                 <div class="card-body">
