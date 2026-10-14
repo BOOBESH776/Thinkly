@@ -30,11 +30,16 @@
         <center>
             <div class="card w-75">
                 <div class="card-body d-flex justify-content-between">
-                    <div class="">
+                    <div>
                         <h2 class="card-title result text-start"><span id="score"></span></h2>
-                        <p class="card-text text-start ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
-                            Nihil
-                            cupiditate ad excepturi minima quasi magnam inventore obcaecati voluptatem est eligendi!</p>
+                        <p class="card-text text-start">
+                            <span class="highlight"> Quiz Complete!</span> 🎉
+                            Great effort putting your knowledge to the test. <br>
+                            <span class="highlight">
+                                Take a look at your results below to see
+                            </span>
+                            what you mastered and where you can keep learning!
+                        </p>
                     </div><br>
                     <div>
                         <a href="/pages/index.html">
@@ -53,7 +58,7 @@
                         </svg>
                     </div>
                     <span class="finish-time mt-3">
-                        <p class="m-0 time-head">TOTAL TIME</p>
+                        <p class="m-0 time-head">REMAINING TIME</p>
                         <p class="finish-one" id="finish-one">&nbsp;</p>
                     </span>
                 </div>
@@ -71,8 +76,17 @@
 
             <div class="filter-head">
                 <div>
-                    <button id="all" class="fl-btn"> 
+                    <button id="all" class="fl-btn">
                         All
+                    </button>
+                    <button id="unanswer" class="fl-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="#FFC520" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-question-mark preview-icon">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <path d="M12 17h.01" />
+                        </svg>&nbsp;Unanswer
                     </button>
                     <button id="incrt" class="fl-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -89,13 +103,14 @@
                             <path d="M20 6 9 17l-5-5" />
                         </svg>&nbsp;Correct
                     </button>
+
                 </div>
             </div>
         </div>
         <br>
 
         <div class="Review-container d-flex justify-content-center">
-            <div class="card w-75" >
+            <div class="card w-75">
                 <h5 class="card-header">Q : 1</h5>
                 <div class="card-body" id="display-questions">
                     <!-- <h5 class="card-title question">What is a correct syntax to output "Hello World" in Python?</h5>
@@ -153,7 +168,7 @@
                         d="M22 6V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2h4.001A2 2 0 0022 17v-1.344" />
                 </svg>&nbsp;All 20 records validated and persisted to database ledger.
             </div>
-            
+
             <div>
                 <a href="/pages/index.html">
                     <button type="button" class="btn continue-btn">Continue to Dashboard -></button>

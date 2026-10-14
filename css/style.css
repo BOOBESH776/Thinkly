@@ -47,12 +47,6 @@ section {
     justify-content: space-around;
 }
 
-.records {
-    color: var(--main-color-);
-    font-weight: bold;
-    margin: 0 4px;
-}
-
 .user_profile .profile_pic img {
     width: 200px;
     height: 200px;
@@ -77,37 +71,21 @@ section {
 .user_year {
     display: flex;
 }
+
 .card {
-    width: 370px;
-    max-width: 85%;
-    display: flex;
-    justify-self: center;
+    width: 450px;
+    max-width: 90%;
 }
 
-.victories>p {
-    color: var(--main-color-);
-    font-weight: bold;
+.card-body .hightlight {
+    font-weight: 700;
+    font-size: large;
+}
+.card-body .hightlight-2 {
+    font-weight: 700;
+    font-size: larger;
 }
 
-.victories>h5 {
-    color: var(--grey-);
-}
-
-.vic-num {
-    color: var(--num-);
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.rate {
-    color: var(--num-2-);
-}
-
-.start-container .ready {
-    color: var(--main-color-);
-}
-
-/* From Uiverse.io*/
 .btn {
     width: 140px;
     height: 50px;
@@ -116,43 +94,12 @@ section {
     border-radius: 10px;
     outline: none;
     cursor: pointer;
-    position: relative;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-}
-
-.btn span {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: top 0.5s;
-}
-
-.btn-text-one {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
     font-weight: bold;
 }
-
-.btn-text-two {
-    position: absolute;
-    width: 100%;
-    top: 150%;
-    left: 0;
-    transform: translateY(-50%);
-    font-weight: bolder;
-}
-
-.btn:hover .btn-text-one {
-    top: -100%;
-
-}
-
-.btn:hover .btn-text-two {
-    top: 50%;
+.start-btn{
+    display: flex;
+    justify-content: end;
 }
 
 .footer-container {

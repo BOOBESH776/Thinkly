@@ -17,8 +17,12 @@
     font-weight: bold;    
 }
 
+.highlight{
+    font-weight: 700;
+    font-size: large;
+}
 .total-time {
-    width: 150px;
+    width: 170px;
     height: 60px;
     background-color: var(--das-card-);
     display: flex;
