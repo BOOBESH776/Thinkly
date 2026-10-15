@@ -25,7 +25,10 @@
 .hero-container .card .card-body>p {
     color: var(--grey-);
 }
-
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
 .submit-btn button{
     background-color: var(--main-color-);
     color: var(--white-);

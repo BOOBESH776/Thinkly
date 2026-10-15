@@ -12,7 +12,7 @@ const incrt = document.getElementById("incrt");
 const crt = document.getElementById("crt");
 const unans = document.getElementById("unanswer");
 
-function renderQuizSummary(filterType) {
+function fl(filtertype) {
     if (!summaryContainer || quizSummary.length === 0) return;
 
     summaryContainer.innerHTML = "";
@@ -20,15 +20,15 @@ function renderQuizSummary(filterType) {
     quizSummary.forEach((item) => {
         const isCorrect = item.userAnswer === item.correctAnswer;
 
-        if (filterType === "unanswer" && item.userAnswer) {
+        if (filtertype === "unanswer" && item.userAnswer) {
             return;
         }
 
-        if (filterType === "correct" && (!isCorrect || !item.userAnswer)) {
+        if (filtertype === "correct" && (!isCorrect || !item.userAnswer)) {
             return;
         }
 
-        if (filterType === "incorrect" && (isCorrect || !item.userAnswer)) {
+        if (filtertype === "incorrect" && (isCorrect || !item.userAnswer)) {
             return;
         }
 
@@ -59,21 +59,20 @@ function renderQuizSummary(filterType) {
 }
 
 all.addEventListener("click", () => {
-    renderQuizSummary("all");
+    fl("all");
 });
 
 unans.addEventListener("click", () => {
-    renderQuizSummary("unanswer");
+    fl("unanswer");
 });
 
 crt.addEventListener("click", () => {
-    renderQuizSummary("correct");
+    fl("correct");
 });
 
 incrt.addEventListener("click", () => {
-    renderQuizSummary("incorrect");
+    fl("incorrect");
 });
-
 
 if (scoreContainer) {
     scoreContainer.textContent = `Your Final Score: ${finalScore} / 10`;
@@ -82,6 +81,4 @@ if (scoreContainer) {
 if (timerContainer) {
     timerContainer.textContent = `${timeTaken}`;
 }
-
-
-renderQuizSummary("all");
+fl("all");

@@ -128,7 +128,7 @@ if (validation) {
         localStorage.setItem("quizTime", finalTime);
         localStorage.setItem("quizSummary", JSON.stringify(quizSummary));
 
-        window.location.href = "score.html";
+        // window.location.href = "score.html";
     });
 }
 
@@ -159,7 +159,6 @@ function starttimer(t) {
                 validation.click();
             }
         }
-
         remaining = remaining - 1;
     }, 1000);
 }
