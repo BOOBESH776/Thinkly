@@ -5,6 +5,7 @@ const quizSummary = JSON.parse(localStorage.getItem("quizSummary")) || [];
 
 const timerContainer = document.getElementById("finish-one");
 const scoreContainer = document.getElementById("score");
+const score = document.getElementById("score-show");
 const summaryContainer = document.getElementById("display-questions");
 
 const all = document.getElementById("all");
@@ -76,9 +77,12 @@ incrt.addEventListener("click", () => {
 
 if (scoreContainer) {
     scoreContainer.textContent = `Your Final Score: ${finalScore} / 10`;
+    scoreContainer.style.color = "var(--num-)"
+    scoreContainer.style.fontWeight = "bold"
+    score.textContent = finalScore
 }
 
 if (timerContainer) {
-    timerContainer.textContent = `${timeTaken}`;
+    timerContainer.textContent = `${timeTaken} / 5:00`;
 }
 fl("all");

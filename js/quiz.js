@@ -18,15 +18,18 @@ async function data() {
             };
         }).slice(0, 10);
 
+        let i = 1
+
         quizdata.forEach((item) => {
+            
             questions.innerHTML += `
-                <h5 class="card-header">Question No : ${item.id}</h5>
+                <h5 class="card-header">Question No : ${i++}</h5>              
                 <div class="card-body">
                      <h5 class="card-title question">${item.question}</h5>
                      <div class="options-container" id="op-card-${item.id}">
                         <div class="question-option d-flex align-items-end mb-2">
                             <div>
-                                <input type="radio" alt="btn" name="q-${item.id}" value="option1">
+                                <input type="radio" alt="btn" name="q-${item.id}" value="option1" onchange="onAnswerSelected()">
                             </div>
                             <div>
                                 &nbsp; <label>${item.options.option1}</label>
@@ -34,7 +37,7 @@ async function data() {
                         </div>
                         <div class="question-option d-flex align-items-end mb-2">
                             <div>
-                                <input type="radio" alt="btn" name="q-${item.id}" value="option2">
+                                <input type="radio" alt="btn" name="q-${item.id}" value="option2" onchange="onAnswerSelected()">
                             </div>
                             <div>
                                 &nbsp; <label>${item.options.option2}</label>
@@ -42,7 +45,7 @@ async function data() {
                         </div>
                         <div class="question-option d-flex align-items-end mb-2">
                             <div>
-                                <input type="radio" alt="btn" name="q-${item.id}" value="option3">
+                                <input type="radio" alt="btn" name="q-${item.id}" value="option3" onchange="onAnswerSelected()">
                             </div>
                             <div>
                                 &nbsp; <label>${item.options.option3}</label>
@@ -50,7 +53,7 @@ async function data() {
                         </div>
                         <div class="question-option d-flex align-items-end mb-2">
                             <div>
-                                <input type="radio" alt="btn" name="q-${item.id}" value="option4">
+                                <input type="radio" alt="btn" name="q-${item.id}" value="option4" onchange="onAnswerSelected()">
                             </div>
                             <div>
                                 &nbsp; <label>${item.options.option4}</label>
@@ -58,10 +61,11 @@ async function data() {
                         </div> 
                     </div>  
                 </div>`;
+                
         });
 
         console.log(quizdata);
-        starttimer(960);
+        starttimer(300);
         return quizdata;
     }
     catch (er) {
@@ -70,6 +74,31 @@ async function data() {
 }
 
 data();
+
+function onAnswerSelected() {
+    // 1. Find all radio buttons that are currently checked across the whole quiz
+    const answeredQuestionsCount = document.querySelectorAll('input[type="radio"]:checked').length;
+
+    // 2. Update the progress layout with the actual number of answered questions
+    if (answeredQuestionsCount <= 10) {
+        updateProgress(answeredQuestionsCount);
+    }
+
+    // 3. Optional status flag text modification
+    if (answeredQuestionsCount === 10) {
+        document.getElementById('pct-text').innerText = "100% Complete - Finished!";
+    }
+}
+
+// Keep your updateProgress function exactly as it is
+function updateProgress(currentNumber) {
+    let pct = (currentNumber / 10) * 100;
+
+    document.getElementById('q-num').textContent = currentNumber;
+    document.getElementById('pct-text').textContent = pct + "% Complete";
+    document.getElementById('bar-fill').style.width = pct + "%";
+}
+
 
 // validation
 let validation = document.getElementById("validation");

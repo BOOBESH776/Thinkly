@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scores</title>
     <link rel="stylesheet" href="/css/score.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -20,7 +20,7 @@
     <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="/assets/img/thinkly_logo.png" alt="Logo" width="50" height="50">
+                <img src="/assets/img/thinkly_logo_small.png" alt="Logo" width="70" height="70">
                 <h4>Thinkly</h4>
             </a>
         </div>
@@ -43,24 +43,30 @@
                     </div><br>
                     <div>
                         <a href="index.html">
-                            <button class="btn btn-warning">Continue</button>
+                            <button class="btn btn-primary">Continue &nbsp; <i
+                                    class="fa-solid fa-arrow-right"></i></button>
                         </a>
                     </div>
                 </div>
                 <div class="total-time rounded m-3">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-timer">
-                            <line x1="10" x2="14" y1="2" y2="2" />
-                            <line x1="12" x2="15" y1="14" y2="11" />
-                            <circle cx="12" cy="14" r="8" />
-                        </svg>
-                    </div>
-                    <span class="finish-time mt-3">
+                    <!-- <span class="finish-time mt-3">
                         <p class="m-0 time-head">REMAINING TIME</p>
                         <p class="finish-one" id="finish-one">&nbsp;</p>
-                    </span>
+                    </span> -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Remaining Time</span>
+                            <span class="stat-value" id="finish-one">00:00</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Total Questions</span>
+                            <span class="stat-value">10</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Correct Answers</span>
+                            <span class="stat-value" id="score-show"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </center>
@@ -76,34 +82,13 @@
 
             <div class="filter-head">
                 <div>
-                    <button id="all" class="fl-btn">
-                        All
-                    </button>
-                    <button id="unanswer" class="fl-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="#FFC520" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-circle-question-mark preview-icon">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                            <path d="M12 17h.01" />
-                        </svg>&nbsp;Unanswer
-                    </button>
-                    <button id="incrt" class="fl-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-x">
-                            <path d="M18 6 6 18" />
-                            <path d="m6 6 12 12" />
-                        </svg>&nbsp;Incorrect
-                    </button>
-                    <button id="crt" class="fl-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-check">
-                            <path d="M20 6 9 17l-5-5" />
-                        </svg>&nbsp;Correct
-                    </button>
-
+                    <button type="button" class="btn btn-outline-primary fl-btn border-2" id="all">All</button>
+                    <button type="button" class="btn btn-outline-success fl-btn border-2" id="crt"><i
+                            class="fa-solid fa-check fa-lg"></i>&nbsp;Correct</button>
+                    <button type="button" class="btn btn-outline-danger fl-btn border-2" id="incrt"><i
+                            class="fa-solid fa-xmark fa-lg"></i>&nbsp;Incorrect</button>
+                    <button type="button" class="btn btn-outline-warning fl-btn border-2" id="unanswer"><i
+                            class="fa-solid fa-exclamation fa-lg"></i>&nbsp;Unanswer</button>
                 </div>
             </div>
         </div>
@@ -111,47 +96,9 @@
 
         <div class="Review-container d-flex justify-content-center">
             <div class="card w-75">
-                <h5 class="card-header">Q : 1</h5>
+                <!-- <h5 class="card-header">Q : 1</h5> -->
                 <div class="card-body" id="display-questions">
-                    <!-- <h5 class="card-title question">What is a correct syntax to output "Hello World" in Python?</h5>
-
-                    <div class="options-container">
-                        <div class="question-option d-flex align-items-end">
-                            <div>
-                                <input type="radio" alt="btn" name="answer">
-                            </div>
-                            <div>
-                                &nbsp; p("Hello World")
-                            </div>
-                        </div>
-
-                        <div class="question-option d-flex align-items-end">
-                            <div>
-                                <input type="radio" alt="btn" name="answer">
-                            </div>
-                            <div>
-                                &nbsp; echo("Hello World")
-                            </div>
-                        </div>
-
-                        <div class="question-option d-flex align-items-end">
-                            <div>
-                                <input type="radio" alt="btn" name="answer">
-                            </div>
-                            <div>
-                                &nbsp; print("Hello World")
-                            </div>
-                        </div>
-
-                        <div class="question-option d-flex align-items-end">
-                            <div>
-                                <input type="radio" alt="btn" name="answer">
-                            </div>
-                            <div>
-                                &nbsp; echo"Hello World"
-                            </div>
-                        </div>
-                    </div> -->
+                    // questions from js
                 </div>
             </div>
         </div>
@@ -166,19 +113,45 @@
                     <path d="m16 12 2 2 4-4" />
                     <path
                         d="M22 6V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2h4.001A2 2 0 0022 17v-1.344" />
-                </svg>&nbsp;All 20 records validated and persisted to database ledger.
+                </svg>&nbsp;All 10 records validated and persisted to database ledger.
             </div>
 
             <div>
                 <a href="index.html">
-                    <button type="button" class="btn continue-btn">Continue to Dashboard -></button>
+                    <button type="button" class="btn continue-btn">TryAgain</button>
                 </a>
             </div>
         </div>
     </main>
 
     <br><br>
-    <footer>
+
+
+    <footer class="quiz-footer-main">
+        <div class="footer-container">
+            <!-- Left Side: Branding with Real Logo & Status -->
+            <div class="footer-brand-section">
+                <div class="footer-logo-wrapper">
+                    <!-- Replace 'logo.png' with your actual image path -->
+                    <img src="assets/img/thinkly_logo-removebg-preview.png" alt="Thinkly Logo" class="footer-app-logo">
+                </div>
+                <p class="footer-tagline">Empowering continuous learning and assessment.</p>
+            </div>
+
+            <!-- Right Side: Links & Copyright -->
+            <div class="footer-links-section">
+                <div class="footer-links">
+                    <a href="#">Support Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div>
+                    <p class="footer-copyright">&copy; 2026 Thinkly Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <footer>
         <div class="footer-container d-flex flex-wrap justify-content-between">
             <div class="d-flex align-items-center">
                 <div>
@@ -192,7 +165,7 @@
                 <p>&copy; 2026 Thinkly.All rights reserved.</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- <script src="/js/quiz.js"></script> -->
     <script src="/js/score.js"></script>

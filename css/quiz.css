@@ -10,11 +10,67 @@
     --num-2-: #045CBA;
     --grey-: #888888;
     --yellow-: #FFC520;
+    --blue: #1675f8;
 }
 
-.navbar-brand>h4 {
+body {
+    background-color: #F0F4FE !important;
+}
+
+/* .navbar-brand>h4 {
     color: var(--main-color-);
     font-weight: bold;
+} */
+
+.return-page {
+    background-color: #1367ed;
+    color: white;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.return-page .back-btn {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(15px, 2vw, 20px);
+}
+
+.return-page .back-btn:hover {
+    color: var(--das-card-);
+}
+
+.instruction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-box {
+    width: 100%;
+    max-width: 650px;
+    font-family: sans-serif;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.bar-bg {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+#bar-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--yellow-);
+    border-radius: 4px;
+    transition: width 0.2s;
 }
 
 .hero-container .card .no-questions {
@@ -25,23 +81,117 @@
 .hero-container .card .card-body>p {
     color: var(--grey-);
 }
-.submit-btn{
+
+.question-container {
+    margin-top: 325px;
+}
+
+.submit-btn {
     display: flex;
     justify-content: center;
 }
-.submit-btn button{
+
+.submit-btn button {
     background-color: var(--main-color-);
     color: var(--white-);
     font-weight: bold;
 }
 
-.submit-btn button:hover{
+.submit-btn button:hover {
     background-color: var(--hover-);
     color: var(--white-);
 }
 
-
-.footer-container{
-    background-color: var(--das-card-);
+/* --- Thinkly Quiz Footer Styling with Logo --- */
+.quiz-footer-main {
+    background-color: #ffffff;
     padding: 10px;
+    /* Pushes footer away from the lowest question card */
+    width: 100%;
+    color: #4b5563;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    padding: 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* Brand Section Styling */
+.footer-brand-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Restricts the logo height nicely to fit standard clean footers */
+.footer-app-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+/* Links & Copyright Styling */
+.footer-links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* Vertically aligns link tree to match the logo visual weight */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #2563eb;
+    /* Highlights to theme blue on hover */
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+/* Responsive design for tablets / phones */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand-section {
+        align-items: center;
+    }
+
+    .footer-links-section {
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid #f3f4f6;
+        padding-top: 20px;
+    }
 }
