@@ -1,0 +1,49 @@
+ body {
+     font-family: Arial, sans-serif;
+     max-width: 600px;
+     margin: 40px auto;
+     padding: 0 20px;
+     color: #333;
+     line-height: 1.6;
+ }
+
+ header,
+ section,
+ footer {
+     margin-bottom: 30px;
+ }
+
+ h1,
+ h2 {
+     color: #0b3c5d;
+ }
+
+ .rules-card {
+     background-color: #fffdf0;
+     border: 1px solid #ffd700;
+     padding: 15px;
+     border-radius: 5px;
+     margin: 20px 0;
+ }
+
+ .btn {
+     background-color: #0b3c5d;
+     color: white;
+     padding: 12px 30px;
+     border: none;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ .btn:hover {
+     background-color: #1d5f8a;
+ }
+
+ footer {
+     text-align: center;
+     font-size: 14px;
+     margin-top: 50px;
+     border-top: 1px solid #ccc;
+     padding-top: 20px;
+ }
