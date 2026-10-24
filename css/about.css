@@ -1,49 +1,127 @@
- body {
-     font-family: Arial, sans-serif;
-     max-width: 600px;
-     margin: 40px auto;
-     padding: 0 20px;
-     color: #333;
-     line-height: 1.6;
- }
+:root {
+    --navy: #092b70;
+    --blue: #1675f8;
+    --text: #294779;
+    --muted: #7188ad;
+    --yellow: #ffc51b;
+    --white-: #fff;
+    --black-: #000;
+    --hover-blue-: #3a87f3;
+    --text-color-: #163365;
+}
 
- header,
- section,
- footer {
-     margin-bottom: 30px;
- }
 
- h1,
- h2 {
-     color: #0b3c5d;
- }
+body {
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+    color: #333;
+    line-height: 1.6;
+    /* margin: 0 auto; */
+}
 
- .rules-card {
-     background-color: #fffdf0;
-     border: 1px solid #ffd700;
-     padding: 15px;
-     border-radius: 5px;
-     margin: 20px 0;
- }
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
 
- .btn {
-     background-color: #0b3c5d;
-     color: white;
-     padding: 12px 30px;
-     border: none;
-     border-radius: 5px;
-     font-size: 16px;
-     cursor: pointer;
- }
+.brand-mini img {
+    width: 70px;
+    height: 70px;
+    margin: 25px;
+}
 
- .btn:hover {
-     background-color: #1d5f8a;
- }
+.topbar .home {
+    background-color: var(--yellow);
+    color: var(--white-);
+    border: none;
+    padding: 9px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
- footer {
-     text-align: center;
-     font-size: 14px;
-     margin-top: 50px;
-     border-top: 1px solid #ccc;
-     padding-top: 20px;
- }
+.topbar .home:hover {
+    cursor: pointer;
+    background-color: var(--hover-blue-);
+}
+
+main {
+    width: 45%;
+    margin: 50px auto;
+}
+
+h1,
+h2 {
+    color: #0b3c5d;
+}
+
+.rules-card {
+    background-color: #fffdf0;
+    border: 1px solid #ffd700;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.btn {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d5f8a;
+}
+
+.quiz-footer-main {
+    background-color: #ffffff;
+    padding: 0px;
+    width: 100%;
+    color: #4b5563;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-app-logo {
+    height: 45px;
+    width: 45px;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #2563eb;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #9ca3af;
+}

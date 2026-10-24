@@ -4,33 +4,26 @@
     --text: #294779;
     --muted: #7188ad;
     --yellow: #ffc51b;
+    --white-: #fff;
+    --black-: #000;
+    --hover-blue-: #3a87f3;
+    --text-color-: #163365;
 }
 
 body {
     margin: 0;
     color: var(--text);
     font-family: 'Nunito Sans', 'Segoe UI', Arial, sans-serif;
-    background: #f3f8ff url('/assets/img/background.png');
+    background: url('/assets/img/background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.topbar{
+.topbar {
     display: flex;
     align-items: center;
-}
-.topbar .nav-about{
-    text-decoration: none;
-    width: 65%;
-    text-align: end;
-    font-size: clamp(16px, 1.5vw, 40px);
-}
-
-.topbar .nav-about:hover{
-    text-decoration: overline;
-    color: var(--yellow);
 }
 
 .brand-mini img {
@@ -65,37 +58,20 @@ body {
     padding: 0 10px;
 }
 
-.promo-pill {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    width: max-content;
-    gap: 17px;
-    text-align: left;
-    padding: 17px 27px;
-    border-radius: 60px;
-    background: rgba(218, 239, 255, .8);
-}
-
-.bolt {
-    font-size: 43px;
-    line-height: 1;
-    color: #3388ff;
-    font-weight: 900;
-    transform: skew(-10deg);
-}
-
-.promo-pill p {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.55;
-    color: #5d749c;
-}
-
-.promo-pill strong {
-    color: #0640b4;
+.brand-panel .about {
+    background-color: var(--yellow);
+    color: var(--white-);
+    border: none;
+    padding: 13px 20px;
+    border-radius: 10px;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: bold;
+    width: 100%;
+}
+
+.brand-panel .about:hover {
+    cursor: pointer;
+    background-color: var(--hover-blue-);
 }
 
 .welcome-card {
@@ -167,7 +143,7 @@ h1 {
 
 .feature h2 {
     margin: 0;
-    color: #163365;
+    color: var(--text-color-);
     font-size: 18px;
     font-weight: 800;
 }
@@ -188,22 +164,20 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background: linear-gradient(110deg, #2584ff, #1670f4);
+    background-color: var(--blue);
     color: white;
-    box-shadow: 0 9px 20px rgba(28, 113, 242, .2);
-    font: inherit;
     font-size: 24px;
     font-weight: 800;
     cursor: pointer;
-    transition: transform .18s ease, box-shadow .18s ease;
 }
-.start-quiz{
+
+.start-quiz {
     text-decoration: none;
 }
+
 .start-button:hover {
-    position: relative;
-    bottom: 2px;
-    box-shadow: 0 13px 24px rgba(47, 108, 201, 0.27);
+    background-color: var(--hover-blue-);
+    color: var(--white-);
 }
 
 .play {
@@ -213,128 +187,4 @@ h1 {
     border-bottom: 15px solid transparent;
     border-left: 23px solid white;
     border-radius: 4px;
-}
-
-@media (max-width: 900px) {
-    .page {
-        padding: 18px 5vw 35px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        margin-top: 5px;
-        max-width: 650px;
-    }
-
-    .brand-panel {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    .hero-logo {
-        max-width: 350px;
-    }
-
-    .tagline {
-        margin-bottom: 20px;
-    }
-
-    .welcome-card {
-        padding: 32px;
-    }
-}
-
-@media (max-width: 480px) {
-    .page {
-        padding: 14px 16px 28px;
-    }
-
-    .topbar {
-        height: 52px;
-    }
-
-    .brand-mini {
-        width: 145px;
-        height: 46px;
-    }
-
-    .hero {
-        gap: 22px;
-    }
-
-    .hero-logo {
-        max-width: 265px;
-    }
-
-    .tagline {
-        font-size: 15px;
-    }
-
-    .tagline span {
-        padding: 0 4px;
-    }
-
-    .promo-pill {
-        padding: 13px 18px;
-        gap: 12px;
-    }
-
-    .promo-pill p {
-        font-size: 14px;
-    }
-
-    .promo-pill strong {
-        font-size: 15px;
-    }
-
-    .bolt {
-        font-size: 35px;
-    }
-
-    .welcome-card {
-        padding: 25px 21px;
-        border-radius: 21px;
-    }
-
-    .eyebrow {
-        font-size: 23px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .intro {
-        font-size: 16px;
-    }
-
-    .subintro {
-        font-size: 14px;
-    }
-
-    .feature {
-        gap: 12px;
-    }
-
-    .feature-icon {
-        flex-basis: 50px;
-        width: 50px;
-        height: 50px;
-        font-size: 23px;
-    }
-
-    .feature h2 {
-        font-size: 16px;
-    }
-
-    .feature p {
-        font-size: 13px;
-    }
-
-    .start-button {
-        min-height: 60px;
-        border-radius: 17px;
-        font-size: 20px;
-    }
 }

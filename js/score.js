@@ -21,6 +21,7 @@ function fl(filtertype) {
     quizSummary.forEach((item) => {
         const isCorrect = item.userAnswer === item.correctAnswer;
 
+
         if (filtertype === "unanswer" && item.userAnswer) {
             return;
         }
@@ -35,7 +36,6 @@ function fl(filtertype) {
 
         let statusText = "";
         let alertClass = "";
-        i = i + 1
         if (!item.userAnswer) {
             statusText = "Not Answered";
             alertClass = "text-warning";
@@ -49,7 +49,7 @@ function fl(filtertype) {
         summaryContainer.innerHTML += `
             <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Question ${i}: ${item.question}</h5>
+                    <h5 class="card-title">Question ${item.id}: ${item.question}</h5>
                     <p class="card-text"><strong>Correct Answer:</strong> ${item.options[item.correctAnswer]}</p>
                     <p class="card-text ${alertClass}"><strong>Your Status:</strong> ${statusText}</p>
                 </div>

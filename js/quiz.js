@@ -114,6 +114,7 @@ if (validation) {
         quizdata.forEach((item) => {
             const select = document.querySelector(`input[name="q-${item.id}"]:checked`);
             let userAnswer;
+            //quizsummary 
             if (select) {
                 userAnswer = select.value
             }
@@ -140,12 +141,6 @@ if (validation) {
             });
         });
 
-        // if (unansweredCount > 0) {
-        //     alert(`You scored ${score}/10! Note: You left ${unansweredCount} questions unanswered.`);
-        // } else {
-        //     alert(`Great job! You answered all questions. Final Score: ${score}/10`);
-        // }
-
         let finalTime = "00:00";
         let timerElement = document.getElementById("timer");
 
@@ -157,10 +152,8 @@ if (validation) {
         localStorage.setItem("quizTime", finalTime);
         localStorage.setItem("quizSummary", JSON.stringify(quizSummary));
 
-        // window.location.href = "score.html";
     });
 }
-
 
 // Timer For Quizz
 function starttimer(t) {
