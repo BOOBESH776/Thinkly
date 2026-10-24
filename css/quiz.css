@@ -102,56 +102,23 @@ body {
     color: var(--white-);
 }
 
-/* --- Thinkly Quiz Footer Styling with Logo --- */
-.quiz-footer-main {
-    background-color: #ffffff;
-    padding: 10px;
-    /* Pushes footer away from the lowest question card */
-    width: 100%;
-    color: #4b5563;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .footer-container {
-    padding: 0 0;
+    padding: 0 30px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-/* Brand Section Styling */
-.footer-brand-section {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer-logo-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-/* Restricts the logo height nicely to fit standard clean footers */
 .footer-app-logo {
     height: 45px;
-    width: auto;
-    object-fit: contain;
+    width: 45px;
 }
 
 .footer-tagline {
     font-size: 13px;
     color: #6b7280;
     margin-top: 2px;
-}
-
-/* Links & Copyright Styling */
-.footer-links-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    /* Vertically aligns link tree to match the logo visual weight */
 }
 
 .footer-links {
@@ -163,35 +130,13 @@ body {
     color: #6b7280;
     text-decoration: none;
     font-size: 13px;
-    transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
     color: #2563eb;
-    /* Highlights to theme blue on hover */
 }
 
 .footer-copyright {
     font-size: 12px;
     color: #9ca3af;
-}
-
-/* Responsive design for tablets / phones */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-brand-section {
-        align-items: center;
-    }
-
-    .footer-links-section {
-        align-items: center;
-        width: 100%;
-        border-top: 1px solid #f3f4f6;
-        padding-top: 20px;
-    }
 }
