@@ -23,7 +23,7 @@ async function data() {
         quizdata.forEach((item) => {
             
             questions.innerHTML += `
-                <h5 class="card-header">Question No : ${i++}</h5>              
+                <h5 class="card-header">Question No : ${i++}</h5>
                 <div class="card-body">
                      <h5 class="card-title question">${item.question}</h5>
                      <div class="options-container" id="op-card-${item.id}">
@@ -64,7 +64,7 @@ async function data() {
                 
         });
 
-        console.log(quizdata);
+        // console.log(quizdata);
         starttimer(300);
         return quizdata;
     }
@@ -76,16 +76,15 @@ async function data() {
 data();
 
 function onAnswerSelected() {
-    // 1. Find all radio buttons that are currently checked across the whole quiz
+
     const answeredQuestionsCount = document.querySelectorAll('input[type="radio"]:checked').length;
 
-    // 2. Update the progress layout with the actual number of answered questions
     if (answeredQuestionsCount <= 10) {
         updateProgress(answeredQuestionsCount);
     }
 
-    // 3. Optional status flag text modification
-    if (answeredQuestionsCount === 10) {
+
+    if(answeredQuestionsCount === 10) {
         document.getElementById('pct-text').innerText = "100% Complete - Finished!";
     }
 }

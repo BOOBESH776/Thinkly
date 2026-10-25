@@ -21,7 +21,6 @@ function fl(filtertype) {
     quizSummary.forEach((item) => {
         const isCorrect = item.userAnswer === item.correctAnswer;
 
-
         if (filtertype === "unanswer" && item.userAnswer) {
             return;
         }

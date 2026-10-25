@@ -75,7 +75,7 @@ body {
 }
 
 .welcome-card {
-    background: rgba(255, 255, 255, .93);
+    background-color: rgba(255, 255, 255, .93);
     width: 50%;
     max-width: 550px;
     border-radius: 25px;
@@ -178,13 +178,4 @@ h1 {
 .start-button:hover {
     background-color: var(--hover-blue-);
     color: var(--white-);
-}
-
-.play {
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 23px solid white;
-    border-radius: 4px;
 }
