@@ -83,7 +83,6 @@ function onAnswerSelected() {
         updateProgress(answeredQuestionsCount);
     }
 
-
     if(answeredQuestionsCount === 10) {
         document.getElementById('pct-text').innerText = "100% Complete - Finished!";
     }
@@ -97,7 +96,6 @@ function updateProgress(currentNumber) {
     document.getElementById('pct-text').textContent = pct + "% Complete";
     document.getElementById('bar-fill').style.width = pct + "%";
 }
-
 
 // validation
 let validation = document.getElementById("validation");

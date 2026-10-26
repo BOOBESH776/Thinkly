@@ -14,10 +14,11 @@ const crt = document.getElementById("crt");
 const unans = document.getElementById("unanswer");
 let i = 0
 function fl(filtertype) {
+  
     if (!summaryContainer || quizSummary.length === 0) return;
-
+    
     summaryContainer.innerHTML = "";
-
+    
     quizSummary.forEach((item) => {
         const isCorrect = item.userAnswer === item.correctAnswer;
 
@@ -32,7 +33,7 @@ function fl(filtertype) {
         if (filtertype === "incorrect" && (isCorrect || !item.userAnswer)) {
             return;
         }
-
+        i = i + 1
         let statusText = "";
         let alertClass = "";
         if (!item.userAnswer) {
@@ -45,10 +46,11 @@ function fl(filtertype) {
             statusText = `Wrong (You chose: ${item.options[item.userAnswer]})`;
             alertClass = "text-danger";
         }
+
         summaryContainer.innerHTML += `
             <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Question ${item.id}: ${item.question}</h5>
+                    <h5 class="card-title">Question ${i}: ${item.question}</h5>
                     <p class="card-text"><strong>Correct Answer:</strong> ${item.options[item.correctAnswer]}</p>
                     <p class="card-text ${alertClass}"><strong>Your Status:</strong> ${statusText}</p>
                 </div>
