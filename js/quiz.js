@@ -84,7 +84,7 @@ function onAnswerSelected() {
     }
 
     if(answeredQuestionsCount === 10) {
-        document.getElementById('pct-text').innerText = "100% Complete - Finished!";
+        document.getElementById('pct-text').textContent = "100% Complete - Finished!";
     }
 }
 
@@ -104,7 +104,7 @@ if (validation) {
         clearInterval(loop_intervel);
 
         let score = 0;
-        let unansweredCount = 0;
+        // let unansweredCount = 0;
 
         let quizSummary = [];
 
@@ -125,9 +125,9 @@ if (validation) {
                 }
             }
 
-            else {
-                unansweredCount = unansweredCount + 1;
-            }
+            // else {
+            //     unansweredCount = unansweredCount + 1;
+            // }
 
             quizSummary.push({
                 id: item.id,

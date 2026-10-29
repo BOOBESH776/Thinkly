@@ -1,4 +1,3 @@
-
 const finalScore = localStorage.getItem("quizScore") || 0;
 const timeTaken = localStorage.getItem("quizTime") || "00:00";
 const quizSummary = JSON.parse(localStorage.getItem("quizSummary")) || [];
@@ -12,12 +11,13 @@ const all = document.getElementById("all");
 const incrt = document.getElementById("incrt");
 const crt = document.getElementById("crt");
 const unans = document.getElementById("unanswer");
-let i = 0
+
 function fl(filtertype) {
-  
+    
     if (!summaryContainer || quizSummary.length === 0) return;
     
     summaryContainer.innerHTML = "";
+    let i = 0
     
     quizSummary.forEach((item) => {
         const isCorrect = item.userAnswer === item.correctAnswer;
