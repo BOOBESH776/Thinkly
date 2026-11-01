@@ -21,7 +21,6 @@ async function data() {
         let i = 1
 
         quizdata.forEach((item) => {
-            
             questions.innerHTML += `
                 <h5 class="card-header">Question No : ${i++}</h5>
                 <div class="card-body">
@@ -61,7 +60,6 @@ async function data() {
                         </div> 
                     </div>  
                 </div>`;
-                
         });
 
         // console.log(quizdata);
@@ -72,13 +70,10 @@ async function data() {
         console.error('Error:', er);
     }
 }
-
-data();
-
+data()
 function onAnswerSelected() {
 
     const answeredQuestionsCount = document.querySelectorAll('input[type="radio"]:checked').length;
-
     if (answeredQuestionsCount <= 10) {
         updateProgress(answeredQuestionsCount);
     }
@@ -88,15 +83,12 @@ function onAnswerSelected() {
     }
 }
 
-// Keep your updateProgress function exactly as it is
 function updateProgress(currentNumber) {
     let pct = (currentNumber / 10) * 100;
-
     document.getElementById('q-num').textContent = currentNumber;
     document.getElementById('pct-text').textContent = pct + "% Complete";
     document.getElementById('bar-fill').style.width = pct + "%";
 }
-
 // validation
 let validation = document.getElementById("validation");
 if (validation) {
