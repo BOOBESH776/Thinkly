@@ -45,7 +45,12 @@ body {
     max-width: 300px;
 }
 
-.tagline {
+.tagline{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+/* .tagline {
     margin: -2px 0 28px;
     color: #5b7198;
     font-size: 16px;
@@ -56,7 +61,7 @@ body {
 .tagline span {
     color: #7084a7;
     padding: 0 10px;
-}
+} */
 
 .brand-panel .about {
     background-color: var(--yellow);
