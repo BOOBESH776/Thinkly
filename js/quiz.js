@@ -71,27 +71,27 @@ async function data() {
     }
 }
 data()
-function onAnswerSelected() {
 
+function onAnswerSelected() {
     const answeredQuestionsCount = document.querySelectorAll('input[type="radio"]:checked').length;
     if (answeredQuestionsCount <= 10) {
         updateProgress(answeredQuestionsCount);
     }
 
-    if(answeredQuestionsCount === 10) {
-        document.getElementById('pct-text').textContent = "100% Complete - Finished!";
+    if(answeredQuestionsCount == 10) {
+        document.getElementById('pct-text').textContent = "100% Completed - Finished!";
     }
 }
 
 function updateProgress(currentNumber) {
-    let pct = (currentNumber / 10) * 100;
+    let percentage = (currentNumber / 10) * 100;
     document.getElementById('q-num').textContent = currentNumber;
-    document.getElementById('pct-text').textContent = pct + "% Complete";
-    document.getElementById('bar-fill').style.width = pct + "%";
+    document.getElementById('pct-text').textContent = percentage + "% Complete";
+    document.getElementById('bar-fill').style.width = percentage + "%";
 }
 // validation
 let validation = document.getElementById("validation");
-if (validation) {
+
     validation.addEventListener("click", () => {
         clearInterval(loop_intervel);
 
@@ -99,7 +99,6 @@ if (validation) {
         // let unansweredCount = 0;
 
         let quizSummary = [];
-
         quizdata.forEach((item) => {
             const select = document.querySelector(`input[name="q-${item.id}"]:checked`);
             let userAnswer;
@@ -110,17 +109,14 @@ if (validation) {
             else {
                 userAnswer = null
             }
-
             if (select) {
                 if (select.value === item.answer) {
                     score = score + 1;
                 }
             }
-
             // else {
             //     unansweredCount = unansweredCount + 1;
             // }
-
             quizSummary.push({
                 id: item.id,
                 question: item.question,
@@ -142,7 +138,7 @@ if (validation) {
         localStorage.setItem("quizSummary", JSON.stringify(quizSummary));
 
     });
-}
+
 
 // Timer For Quizz
 function starttimer(t) {

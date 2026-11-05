@@ -16,7 +16,7 @@ body{
 }
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 200px);
     gap: 15px;
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
@@ -28,13 +28,13 @@ body{
     gap: 4px;
 }
 
-.stat-label {
+.start-label {
     font-size: 18px;
     color: var(--num-);
     font-weight: 900;
 }
 
-.stat-value {
+.start-value {
     font-size: 16px;
     font-weight: 700;
     color: var(--grey-);
@@ -74,7 +74,6 @@ body{
     background-color: var(--hover-);
     color: var(--white-);
 }
-
 
 .footer-container {
     padding: 0 30px;

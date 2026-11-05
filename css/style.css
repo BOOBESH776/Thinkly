@@ -96,29 +96,26 @@ body {
 }
 
 h1 {
-    margin: 2px 0 0;
     color: #102c67;
     font-size: 28px;
     line-height: 1.2;
     font-weight: 900;
+    margin: 0;
 }
 
 .intro {
-    margin: 0 0 9px;
     font-size: 17px;
     line-height: 1.55;
     font-weight: 600;
 }
 
 .subintro {
-    margin: 0 0 26px;
     color: var(--muted);
     font-size: 15px;
     line-height: 1.5;
 }
 
 .feature-list {
-    border-top: 1px solid #dce8f7;
     padding-top: 14px;
     margin-bottom: 26px;
 }
@@ -127,23 +124,14 @@ h1 {
     display: flex;
     align-items: center;
     gap: 18px;
-    margin: 0 0 16px;
-}
-
-.feature:last-child {
-    margin-bottom: 0;
 }
 
 .feature-icon {
-    flex: 0 0 62px;
     width: 62px;
     height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    font-size: 28px;
-    font-weight: 800;
 }
 
 .feature h2 {

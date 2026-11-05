@@ -34,18 +34,24 @@ body {
 .return-page .back-btn {
     color: white;
     text-decoration: none;
-    font-size: clamp(15px, 2vw, 20px);
+    font-size: 15px;
 }
 
 .return-page .back-btn:hover {
     color: var(--das-card-);
 }
 
-.instruction{
+.instruction {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.hero-container .card .no-questions {
+    color: var(--main-color-);
+    font-weight: bolder;
+}
+
 .progress-box {
     width: 100%;
     max-width: 650px;
@@ -70,15 +76,9 @@ body {
     height: 100%;
     background: var(--yellow-);
     border-radius: 4px;
-    transition: width 0.2s;
 }
 
-.hero-container .card .no-questions {
-    color: var(--main-color-);
-    font-weight: bolder;
-}
-
-.hero-container .card .card-body>p {
+.hero-container .card .card-body > p{
     color: var(--grey-);
 }
 
