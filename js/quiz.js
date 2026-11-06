@@ -89,6 +89,7 @@ function updateProgress(currentNumber) {
     document.getElementById('pct-text').textContent = percentage + "% Complete";
     document.getElementById('bar-fill').style.width = percentage + "%";
 }
+
 // validation
 let validation = document.getElementById("validation");
 
